@@ -1,0 +1,65 @@
+site_name: JLPT N2 听力逐题精讲
+site_description: JLPT N2 历年听力原文、翻译与语言知识整理
+site_url: https://joneswei99x19-crypto.github.io/jlpt-n2-listening-materials/
+repo_name: joneswei99x19-crypto/jlpt-n2-listening-materials
+repo_url: https://github.com/joneswei99x19-crypto/jlpt-n2-listening-materials
+use_directory_urls: true
+
+theme:
+  name: material
+  language: zh
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-7
+        name: 切换到深色模式
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/brightness-4
+        name: 切换到浅色模式
+  font:
+    text: Noto Sans
+    code: Roboto Mono
+
+plugins:
+  - search:
+      lang:
+        - zh
+        - ja
+        - en
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra_css:
+  - stylesheets/extra.css

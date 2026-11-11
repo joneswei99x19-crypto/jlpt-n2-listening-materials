@@ -1,0 +1,3 @@
+/* Comfortable line length for long-form Japanese and Chinese study notes. */
+.md-grid { max-width: 78rem; }
+.md-typeset { line-height: 1.78; }
